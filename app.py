@@ -77,12 +77,14 @@ def ask_ai(prompt):
     client = get_ai_client()
 
     try:
-        response = client.responses.create(
-            model=os.getenv("OPENAI_MODEL", "gpt-6-luna"),
-            input=prompt,
-            max_output_tokens=650
-        )
-        result = response.output_text.strip()
+        
+response = client.responses.create(
+    model=os.getenv("OPENAI_MODEL", "gpt-4.1-mini"),
+    input=prompt,
+    max_output_tokens=650
+)
+result = response.output_text.strip()
+
 
         if not result:
             raise HTTPException(
