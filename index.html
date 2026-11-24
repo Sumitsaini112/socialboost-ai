@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SocialBoost AI — Creator Growth & Studio</title>
+<style>
+:root{--bg:#0a1020;--panel:#121c33;--panel2:#182642;--text:#eef3ff;--muted:#a6b4d0;--accent:#927cff;--cyan:#55d8ce;--line:#293958;--gold:#f4c978}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 80% -5%,#29285b 0,#0a1020 44%);color:var(--text);font:15px/1.5 Inter,system-ui,Arial}
+header{display:flex;align-items:center;justify-content:space-between;padding:17px max(5vw,18px);border-bottom:1px solid var(--line);position:sticky;top:0;background:#0a1020ed;backdrop-filter:blur(12px);z-index:3}
+.brand{font-weight:850;font-size:21px;letter-spacing:-.5px}.brand span{color:var(--cyan)}.pill{border:1px solid #3a4770;border-radius:30px;padding:6px 11px;color:#d4ddf5;font-size:11px}
+main{max-width:1160px;margin:auto;padding:32px 20px 70px}.hero{display:flex;justify-content:space-between;gap:25px;align-items:center;margin:8px 0 27px}.hero h1{font-size:clamp(32px,5vw,49px);line-height:1.08;margin:8px 0}.hero p{color:var(--muted);max-width:650px}.eyebrow{color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:1.7px;text-transform:uppercase}
+button{border:0;border-radius:11px;background:linear-gradient(120deg,var(--accent),#559dff);color:white;padding:11px 16px;font-weight:750;cursor:pointer}button.secondary{background:#202f4e;border:1px solid #3a4d70}button:active{transform:scale(.98)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.card{background:linear-gradient(145deg,#17233e,#111a2e);border:1px solid var(--line);border-radius:17px;padding:18px;min-width:0}.metric{font-size:26px;font-weight:850;margin:7px 0}.muted{color:var(--muted);font-size:13px}.platform{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}.platform strong{font-size:17px}.status{font-size:11px;color:#f5d18a;background:#49391d;padding:5px 9px;border-radius:20px}
+.section-title{font-size:21px;margin:30px 0 13px}.two{display:grid;grid-template-columns:1.1fr .9fr;gap:13px}.three{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.field{display:flex;flex-direction:column;gap:7px;margin:12px 0}.field label{color:#c6d1eb;font-size:13px}.field input,.field select,.field textarea{background:#0d162a;color:var(--text);border:1px solid #334365;border-radius:10px;padding:12px;font:inherit;width:100%}.field textarea{min-height:90px;resize:vertical}.output{white-space:pre-wrap;background:#0d162a;border:1px dashed #40527a;border-radius:12px;padding:13px;color:#dbe5ff;min-height:58px;margin-top:12px}
+.connect{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid var(--line)}.connect:last-child{border:0}.notice{margin-top:14px;padding:13px;border-radius:12px;background:#182942;color:#c7d8f5;border:1px solid #2b4566;font-size:13px}
+.price{font-size:29px;font-weight:850;margin:8px 0}.price small{font-size:13px;color:var(--muted);font-weight:500}.feature{padding:5px 0;color:#d4def4;font-size:13px}.popular{border-color:#8d7cff;box-shadow:0 0 0 1px #8d7cff44}.tag{display:inline-block;color:#171329;background:var(--gold);padding:4px 8px;border-radius:20px;font-size:10px;font-weight:900}
+.ad-slot{border:1px dashed #65769a;background:#101a2e;border-radius:13px;padding:14px;text-align:center;color:#aebbd5}.service-icon{font-size:26px}.small{font-size:12px;color:var(--muted)}
+footer{color:#8291b1;text-align:center;margin-top:36px;font-size:12px}
+@media(max-width:850px){.grid{grid-template-columns:repeat(2,1fr)}.two{grid-template-columns:1fr}.three{grid-template-columns:1fr}.hero{align-items:flex-start;flex-direction:column}}
+@media(max-width:460px){header{padding:14px}.grid{grid-template-columns:1fr 1fr}.card{padding:14px}.metric{font-size:22px}}
+</style>
+</head>
+<body>
+<header><div class="brand">SocialBoost <span>AI</span></div><div class="pill">CREATOR GROWTH BUSINESS</div></header>
+<main>
+<section class="hero"><div><div class="eyebrow">Create smarter · Grow authentically · Earn responsibly</div><h1>One studio for your<br>social media growth.</h1><p>Plan content, create captions, understand performance and manage creator services across Instagram, Facebook and YouTube — all in one place.</p></div><button onclick="document.querySelector('#plans').scrollIntoView({behavior:'smooth'})">Explore plans ↓</button></section>
+
+<div class="grid">
+<div class="card"><div class="platform"><strong>Instagram</strong><span class="status">Not connected</span></div><div class="metric">—</div><div class="muted">Followers · Connect account for insights</div></div>
+<div class="card"><div class="platform"><strong>Facebook</strong><span class="status">Not connected</span></div><div class="metric">—</div><div class="muted">Page likes · Connect for insights</div></div>
+<div class="card"><div class="platform"><strong>YouTube</strong><span class="status">Not connected</span></div><div class="metric">—</div><div class="muted">Subscribers · Connect for insights</div></div>
+<div class="card"><div class="platform"><strong>Creator earnings</strong><span class="status">Setup needed</span></div><div class="metric">₹—</div><div class="muted">Your revenue overview</div></div>
+</div>
+
+<h2 class="section-title">Your creator workspace</h2>
+<div class="two">
+<div class="card">
+<h3 style="margin-top:0">Connect social accounts</h3>
+<div class="connect"><div><b>Instagram</b><div class="muted">Professional account insights</div></div><button class="secondary" onclick="alert('Official Meta OAuth/API setup is required before connecting accounts.')">Connect</button></div>
+<div class="connect"><div><b>Facebook</b><div class="muted">Page insights and publishing tools</div></div><button class="secondary" onclick="alert('Official Meta OAuth/API setup is required before connecting accounts.')">Connect</button></div>
+<div class="connect"><div><b>YouTube</b><div class="muted">Channel analytics and video performance</div></div><button class="secondary" onclick="alert('Google OAuth and YouTube Data API setup is required before connecting accounts.')">Connect</button></div>
+<div class="notice">Use official sign-in only. Never enter your social media password into this website. Live insights need approved API access and your permission.</div>
+</div>
+<div class="card">
+<h3 style="margin-top:0">Monetization tracker</h3>
+<label class="connect"><span>Check platform eligibility</span><input type="checkbox"></label>
+<label class="connect"><span>Publish original content</span><input type="checkbox"></label>
+<label class="connect"><span>Follow copyright & community rules</span><input type="checkbox"></label>
+<p class="small">Platforms decide eligibility and payouts. This tracker does not guarantee monetization.</p>
+</div>
+</div>
+
+<h2 class="section-title" id="studio">AI Creator Studio</h2>
+<div class="two">
+<div class="card"><h3 style="margin-top:0">Content idea generator</h3>
+<div class="field"><label>Topic / niche</label><input id="ideaTopic" placeholder="e.g. gaming, facts, comedy"></div>
+<div class="field"><label>Platform</label><select id="ideaPlatform"><option>YouTube</option><option>Instagram</option><option>Facebook</option></select></div>
+<button onclick="generateIdeas()">Generate ideas</button><div class="output" id="ideasOut">Your ideas will appear here.</div></div>
+<div class="card"><h3 style="margin-top:0">Caption & hashtag helper</h3>
+<div class="field"><label>Post topic</label><input id="captionTopic" placeholder="What is your post about?"></div>
+<div class="field"><label>Platform</label><select id="captionPlatform"><option>Instagram</option><option>Facebook</option><option>YouTube</option></select></div>
+<button onclick="generateCaption()">Create caption</button><div class="output" id="captionOut">Your caption will appear here.</div></div>
+</div>
+
+<h2 class="section-title" id="plans">Subscription plans</h2>
+<p class="muted">Illustrative launch pricing. Payments are not activated yet.</p>
+<div class="three">
+<div class="card"><h3>Free</h3><div class="price">₹0 <small>/ month</small></div><div class="feature">✓ Basic content ideas</div><div class="feature">✓ Caption helper</div><div class="feature">✓ Manual growth checklist</div><button class="secondary" style="width:100%;margin-top:13px" onclick="alert('Free plan selected. Account signup will be added next.')">Start free</button></div>
+<div class="card popular"><span class="tag">POPULAR</span><h3>Pro</h3><div class="price">₹299 <small>/ month</small></div><div class="feature">✓ More AI content drafts</div><div class="feature">✓ Content planning tools</div><div class="feature">✓ Growth history dashboard</div><div class="feature">✓ Priority creator support</div><button style="width:100%;margin-top:13px" onclick="alert('Payment checkout will be enabled after payment provider and account setup.')">Choose Pro</button></div>
+<div class="card"><h3>Business</h3><div class="price">₹599 <small>/ month</small></div><div class="feature">✓ Pro features</div><div class="feature">✓ Multi-brand workspace (planned)</div><div class="feature">✓ Creator service discounts</div><div class="feature">✓ Business support</div><button class="secondary" style="width:100%;margin-top:13px" onclick="alert('Payment checkout will be enabled after payment provider and account setup.')">Choose Business</button></div>
+</div>
+
+<h2 class="section-title">Creator services</h2>
+<div class="three">
+<div class="card"><div class="service-icon">🎬</div><h3>Short-video editing</h3><p class="muted">Reels and Shorts editing with captions, pacing and basic polish.</p><button class="secondary" onclick="requestService('Short-video editing')">Request service</button></div>
+<div class="card"><div class="service-icon">🖼️</div><h3>Thumbnail design</h3><p class="muted">Custom thumbnail concepts for videos and creator pages.</p><button class="secondary" onclick="requestService('Thumbnail design')">Request service</button></div>
+<div class="card"><div class="service-icon">✍️</div><h3>Content package</h3><p class="muted">Titles, descriptions, captions and hashtag suggestions.</p><button class="secondary" onclick="requestService('Content package')">Request service</button></div>
+</div>
+
+<h2 class="section-title">Advertising space</h2>
+<div class="ad-slot"><b>Advertisement placement</b><br><span class="small">Reserved space for approved ad network or direct sponsor campaigns. Ads are not live yet.</span></div>
+<div class="notice"><b>How SocialBoost AI can earn:</b> Pro/Business subscriptions + creator service orders + compliant advertising. Ad revenue depends on network approval, eligible traffic and advertiser demand. Never sell fake followers, likes, views or comments.</div>
+<footer>SocialBoost AI · Independent creator toolkit · Not affiliated with Meta, Instagram, Facebook or YouTube<br>Pricing, checkout, live analytics and ad delivery require separate account/API/provider setup.</footer>
+</main>
+<script>
+async function postJSON(url,data){const r=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});if(!r.ok)throw new Error('Request failed');return r.json()}
+async function generateIdeas(){const o=document.getElementById('ideasOut');o.textContent='Generating…';try{const d=await postJSON('/api/ideas',{topic:document.getElementById('ideaTopic').value,platform:document.getElementById('ideaPlatform').value});o.textContent=d.ideas.map((x,i)=>(i+1)+'. '+x).join('\\n')+'\\n\\n'+d.note}catch(e){o.textContent='Could not generate. Please try again.'}}
+async function generateCaption(){const o=document.getElementById('captionOut');o.textContent='Generating…';try{const d=await postJSON('/api/caption',{topic:document.getElementById('captionTopic').value,platform:document.getElementById('captionPlatform').value});o.textContent=d.caption+'\\n\\n'+d.hashtags+'\\n\\n'+d.note}catch(e){o.textContent='Could not generate. Please try again.'}}
+function requestService(service){alert('Service request form is the next setup step: '+service+'. No order or payment has been placed.')}
+</script>
+</body></html>
