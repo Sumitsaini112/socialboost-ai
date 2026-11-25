@@ -87,6 +87,7 @@ def validate_options(payload):
     return platform, language
 
 
+
 def ask_ai(prompt):
     client = get_ai_client()
 
@@ -108,11 +109,15 @@ def ask_ai(prompt):
         return result
 
     except OpenAIError as e:
-    print(f"OPENAI API ERROR: {type(e).__name__}: {e}", flush=True)
-    raise HTTPException(
-        status_code=502,
-        detail="AI service error. Check Render logs."
-    )
+        print(
+            f"OPENAI API ERROR: {type(e).__name__}: {e}",
+            flush=True
+        )
+        raise HTTPException(
+            status_code=502,
+            detail="AI service error. Check Render logs."
+        )
+        
 
 
 @app.post("/api/ideas")
