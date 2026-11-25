@@ -1,4 +1,4 @@
-import os
+
 import re
 from pathlib import Path
 
@@ -224,4 +224,4 @@ Write the hashtags here.
         "hashtags": hashtags,
         "note": f"AI-generated draft for {platform}. Review facts and personalize before publishing."
     }
-    
+
