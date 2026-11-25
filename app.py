@@ -107,11 +107,12 @@ def ask_ai(prompt):
 
         return result
 
-    except OpenAIError:
-        raise HTTPException(
-            status_code=502,
-            detail="AI service could not complete the request. Please try again."
-        )
+    except OpenAIError as e:
+    print(f"OPENAI API ERROR: {type(e).__name__}: {e}", flush=True)
+    raise HTTPException(
+        status_code=502,
+        detail="AI service error. Check Render logs."
+    )
 
 
 @app.post("/api/ideas")
